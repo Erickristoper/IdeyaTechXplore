@@ -34,6 +34,7 @@
     </div>    
 </nav>
 
+
     <div class="jumbotron">
     <div class="container">
 <!-- <div class="card" id ="profile">
@@ -41,7 +42,6 @@
   <h1>Jamie Santos</h1>
   <p class="title">Shopper</p>
 </div> -->
-
         <div id="exTab1" class="container">	
 
         <ul class="nav nav-tabs">
@@ -56,10 +56,9 @@
                          $strJsonFileContents = file_get_contents("json/shoppingList.json");
                          $array = json_decode($strJsonFileContents, true);
 
-
                          $stores = file_get_contents("json/stores.json");
                          $storesArray = json_decode($stores, true);
-                    
+                         $count_item = 0;
                           foreach($array['shoppingList'] as $list) {
                             echo "<div class='card' id='list'>";
                                     $productname = $list['productName'];
@@ -91,58 +90,125 @@
                             
                             //search stores
                             // $count;
+                         
+                            foreach($storesArray['stores'][0]['products'] as $storesnames){
+                             
+                                if($storesnames['name']== $productname){
+                                     
+                                    // foreach($storesArray['stores'][0]['products'] as $storesnames){
+                                    
+                                        if($storesnames['name'] == $productname){
+                                            
+                                            $count_item++;
+                                            $itemname = $storesnames['name'];
+                                            $itemprice = $storesnames['price'];
+                                        }else {
+                                            $count_item = 0;
+                                    }
+                             //  }
+                                    // $count_item++;
+                                    
+                                }
+                            }
+
                             foreach($storesArray['stores'] as $storeslist) {
-                              
-                          
 
                                 if($storeslist['products'][0]['name'] == $productname)
-                          
                                 {
                                     $count;
                                     echo "<div class='card' id='list'>";
-                                    echo $storeslist['name'];
-                                    echo "</div>";
+                                    echo "<h3 style ='color:red;'>" . $storeslist['name'] . "</h3>" . 'got' . ' ' .  $count_item . ' items ' . ' from your list';
+                                    echo "<button data-toggle='modal' data-target='#myModal'>" .'Check Items' . "</button>";
+                                    // <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                                        foreach($storesArray['stores'][0]['products'] as $storesnames){
+                             
+                                          if($storesnames['name'] == $productname){
+                                             
+                                            // foreach($storesArray['stores'][0]['products'] as $storesnames){
+                                            
+                                                if($storesnames['name'] == $productname){
+                                                    
+                                                    // $count_item++;
+                                                    // $itemname = $storesnames['name'];
+                                                    // $itemprice = $storesnames['price'];
+                                                    // echo $itemname;
+                                                    // echo $itemprice;
+                                                    
+                                                }else {
+                                                    // $count_item = 0;
+                                            }
+                                     //  }
+                                            // $count_item++;
+                                            
+                                        }
+                                    }
+                                    
+                                     echo "</div>";
                                     $count++;
                                 }
-
-                                // echo "<div class='card' id='list'>";
-                                //         $productname = $list['productName'];
-                                //         $price = $list['price'];
-                                //         $quantity = $list['quatity'];
-                                //         $oldprice = $price +10;
-                                //         $image = $list['image'];
-    
-    
-    
-                                //     echo "<div class = 'row'>";
-                                //             echo "<div id='image'>";
-                                //             //TODO: image url from jsonfile
-                                //             echo "<img src= $image  width='50' height='60'>";
-                                //             echo "</div>";
-    
-                                //             echo "<div style ='display:inline-flex;margin-right:10px;'>";
-                                //                     echo  "<h5>" . 'Php ' . $price . "</h5>";
-                                                
-                                //             echo "</div>";
-    
-                                //             echo "<div style ='display:inline-block'>";
-                                //                     echo  "<small>" . 'Old Price ' . "</small>";
-                                //                     echo  "<h5>" . 'Php ' .  $oldprice. "</h5>";
-                                //                     // echo  ""
-                                                
-                                //             echo "</div>";
-                                      
-    
-                                //     echo " </div>";
-                                // echo " </div>";
                                 
+                                else {
+                                    $count = 0;
+                                }
+
                                 
                               } 
 
-                            
-                          }    
-                          echo "<h5 style='color:red;text-align:center'>" .  '<h4 id = "totalstore">' . $count . '</h4>'  .  'Stores Found!' . "</h5>";
 
+
+
+
+                              
+
+                          }    
+                                // <!-- Trigger the modal with a button -->
+
+                                // <!-- Modal -->
+                               echo "<div id='myModal' class='modal fade'role='dialog'>";
+                               echo "<div class='modal-dialog'>";
+
+                                    // <!-- Modal content-->
+                                    echo "<div class='modal-content'>";
+                                    echo "<div class='modal-header'>";
+                                       
+                                   echo "</div>";
+                                   echo "<div class='modal-body'>";
+
+                                    // <?php 
+                                    $stores = file_get_contents("json/stores.json");
+                                     $storesArray = json_decode($stores, true);
+                                        foreach($storesArray['stores'] as $storesnames){
+                                            foreach($storesnames['products'] as $prods){
+                                             if($prods['name']== $productname){
+                                                 
+                                                // foreach($storesArray['stores'][0]['products'] as $storesnames){
+                                        
+                                                   // if($storesnam['name'] == $productname){
+                                                        
+                                                        // $count_item++;
+                                                    $itemname = $prods['name'];
+                                                    echo  $itemname . "<br>";
+                                                   $itemprice = $prods['price'];
+                                                    echo   $itemprice . "<br>";
+                                                    }else {
+                                                        // $count_item = 0;
+                                                }
+                                        //  }
+                                                // $count_item++;
+                                            }  
+                                            }
+                                        // }
+                                    // 
+                                       
+                                  echo  "</div>";
+                                  echo  "<div class='modal-footer'>";
+                                      echo  "<button type='button' class='btn btn-default' data-dismiss='modal'>" . 'Close' . "</button>";
+                                   echo "</div>";
+                                   echo "</div>";
+
+                              echo  "</div>";
+                              echo  "</div>";
+                          echo "<h5 style='color:red;text-align:center'>" .  "<h4 id = 'totalstore'>" . $count . "</h4>" .  'Stores Found!' . "</h5>";
 
                           ?> 
                 </div> 
