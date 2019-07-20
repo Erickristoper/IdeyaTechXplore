@@ -53,44 +53,100 @@
 			<div class="tab-content clearfix">
 			  <div class="tab-pane active" id="1a">
                        <?php  
-                         $strJsonFileContents = file_get_contents("json/cart.json");
+                         $strJsonFileContents = file_get_contents("json/shoppingList.json");
                          $array = json_decode($strJsonFileContents, true);
+
+
+                         $stores = file_get_contents("json/stores.json");
+                         $storesArray = json_decode($stores, true);
                     
-                          foreach($array['cart'] as $cart) {
+                          foreach($array['shoppingList'] as $list) {
                             echo "<div class='card' id='list'>";
-                                    $productname = $cart['productName'];
-                                    $price = $cart['price'];
-                                    $quantity = $cart['quatity'];
+                                    $productname = $list['productName'];
+                                    $price = $list['price'];
+                                    $quantity = $list['quatity'];
+                                    $oldprice = $price +10;
+                                    $image = $list['image'];
+
                                 echo "<div class = 'row'>";
                                         echo "<div id='image'>";
                                         //TODO: image url from jsonfile
-                                        echo "<img src='assets/yellow.png' width='50' height='60'>";
+                                        echo "<img src= $image  width='50' height='60'>";
                                         echo "</div>";
 
-                                        echo "<div style ='display:inline-block'>";
-                                                echo  "<h5>" . 'Php ' . 'NIDO -LACTO EASE' . "</h5>";
-                                                echo  "<h5>" . 'Size: 28.1 oz' . "</h5>";
+                                        echo "<div style ='display:inline-flex;margin-right:10px;'>";
+                                                echo  "<h5>" . 'Php ' . $price . "</h5>";
                                             
                                         echo "</div>";
 
                                         echo "<div style ='display:inline-block'>";
-                                                echo  "<h5>" . 'Old Price ' . 'NIDO -LACTO EASE' . "</h5>";
-                                                echo  "<h5>" . 'Php 220.00' . "</h5>";
-                                                echo  ""
-                                            
+                                                echo  "<small>" . 'Old Price ' . "</small>";
+                                                echo  "<h5>" . 'Php ' .  $oldprice. "</h5>";
+      
                                         echo "</div>";
+                                  
 
-
-
-
-
- 
                                 echo " </div>";
                             echo " </div>";
                             
+                            //search stores
+                            // $count;
+                            foreach($storesArray['stores'] as $storeslist) {
+                              
+                          
+
+                                if($storeslist['products'][0]['name'] == $productname)
+                          
+                                {
+                                    $count;
+                                    echo "<div class='card' id='list'>";
+                                    echo $storeslist['name'];
+                                    echo "</div>";
+                                    $count++;
+                                }
+
+                                // echo "<div class='card' id='list'>";
+                                //         $productname = $list['productName'];
+                                //         $price = $list['price'];
+                                //         $quantity = $list['quatity'];
+                                //         $oldprice = $price +10;
+                                //         $image = $list['image'];
+    
+    
+    
+                                //     echo "<div class = 'row'>";
+                                //             echo "<div id='image'>";
+                                //             //TODO: image url from jsonfile
+                                //             echo "<img src= $image  width='50' height='60'>";
+                                //             echo "</div>";
+    
+                                //             echo "<div style ='display:inline-flex;margin-right:10px;'>";
+                                //                     echo  "<h5>" . 'Php ' . $price . "</h5>";
+                                                
+                                //             echo "</div>";
+    
+                                //             echo "<div style ='display:inline-block'>";
+                                //                     echo  "<small>" . 'Old Price ' . "</small>";
+                                //                     echo  "<h5>" . 'Php ' .  $oldprice. "</h5>";
+                                //                     // echo  ""
+                                                
+                                //             echo "</div>";
+                                      
+    
+                                //     echo " </div>";
+                                // echo " </div>";
+                                
+                                
+                              } 
+
+                            
                           }    
-                          ?>
+                          echo "<h5 style='color:red;text-align:center'>" .  '<h4 id = "totalstore">' . $count . '</h4>'  .  'Stores Found!' . "</h5>";
+
+
+                          ?> 
                 </div> 
+              
                 <div class="tab-pane" id="2a" data-toggle="tab">
                 
                 <?php  
@@ -128,12 +184,8 @@
                               }    
                               ?>        
     
-    
-    
              </div>
                 </div>
-         <!-- <div class ="tab-content clearfix"> -->
-			
 
 		</div>
        
@@ -141,9 +193,7 @@
 			</div>
   </div>
 
-       
-
-        <p><a href="" target="_blank" class="btn btn-success btn-lg">Get started today</a></p>
+    
     </div>
     <div class="row">
       

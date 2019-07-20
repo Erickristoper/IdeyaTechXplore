@@ -17,26 +17,45 @@
   "coordinates": "15km away",
   "logo":"AAAAAAAAAAAAAAAAAAA", 
   "contactNumbers":"000-001",
-  "ratings":"5"},
-  
+  "ratings":"5",
+  "products": [
+    {"name" : "Cheerios", "price":"20.00"},
+    {"name" : "Tide", "price":"400.00"}
+  ]
+},
   {"name":"Metro Supermarket", 
   "address":"L1, 169 Market! Market MAll, 26th Street COrner C5, BGC",
   "coordinates":"20km away",
   "logo":"gertrhh", 
   "contactNumbers":"000-001",
-  "ratings":"5"},
+  "ratings":"5",
+  "products": [
+    {"name" : "Cheerios", "price":"20.00"},
+    {"name" : "Tide", "price":"400.00"}
+  ]
+},
   
   {"name":"SM HyperMarket", 
   "address":"SM Aura Premier, McKinley Pkwy, Taguig",
   "coordinates":"8km away",
   "logo":"tytruy", 
   "contactNumbers":"000-001",
-  "ratings":"5"},
+  "ratings":"5",
+  "products": [
+    {"name" : "Cheerios", "price":"20.00"},
+    {"name" : "Tide", "price":"400.00"}
+  ]
+},
   
   {"name":"Robinsons Selections", 
   "address":"8 Formbes Town Center, Global Fort, Taguig City",
   "coordinates":"10km away",
   "logo":"ytyerui", 
   "contactNumbers":"000-001",
-  "ratings":"5"}
+  "ratings":"5",
+  "products": [
+    {"name" : "Cheerios", "price":"20.00"},
+    {"name" : "Tide", "price":"400.00"}
+  ]
+}
  ]}

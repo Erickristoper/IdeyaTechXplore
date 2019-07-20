@@ -11,7 +11,7 @@
   
   {"name":"Ariel", 
   "description":"BBBBBBBBBB",
-  "image":"CCCCCCCCCCCCCCCC",
+  "image":"https://images-na.ssl-images-amazon.com/images/I/71J4LLKFW8L._SX466_.jpg",
   "price":"8.00", 
   "promo":"EEEEEEEEEEEEEEEEEEE",
   "discount":"5",
@@ -20,7 +20,7 @@
   
   {"name":"Cheerios", 
   "description":"BBBBBBBBBB",
-  "image":"https://target.scene7.com/is/image/Target/GUEST_2dc4d7cc-02b4-4e0e-8279-fd1d65f367b3?wid=488&hei=488&fmt=pjpeg",
+  "image":"https://target.scene7.com/is/image/Target/GUEST_2dc4d7cc-02b4-4e0e-8279-fd1d65f367b3?wid=488&hei=488&fmt=jpeg",
   "price":"480", 
   "promo":"EEEEEEEEEEEEEEEEEEE",
   "discount":"5",
@@ -38,7 +38,7 @@
   
   {"name":"AAAAAAA", 
   "description":"BBBBBBBBBB",
-  "image":"CCCCCCCCCCCCCCCC",
+  "image":"https://images-na.ssl-images-amazon.com/images/I/71J4LLKFW8L._SX466_.jpg",
   "price":"300.00", 
   "promo":"EEEEEEEEEEEEEEEEEEE",
   "discount":"5",

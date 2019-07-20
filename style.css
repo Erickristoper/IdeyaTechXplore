@@ -99,3 +99,10 @@ body {
   button:hover, a:hover {
     opacity: 0.7;
   }
+
+  /* #addimage {
+    background:url('assets/add.png') no-repeat;
+    cursor:pointer;
+    border: none;
+
+  } */

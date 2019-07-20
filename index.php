@@ -41,14 +41,14 @@
             <span class="input-group-text">Search</span>
         </div>
         <input class="form-control" id="itemname" aria-label="With textarea">
-        <input type="button" id="submit">
+        <input type="button" id="submit" value="Go">
         </div>
     
 
         <!-- <div class="container"><h1>Items </h1></div> -->
         <div id="exTab1" class="container">	
 
-        <ul class="nav nav-tabs">
+        <!-- <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link active" href="#1a">ALL STORES</a>
             </li>
@@ -58,23 +58,16 @@
             <li class="nav-item">
                 <a class="nav-link" href="#3a">CATEGORIES</a>
             </li>
-        </ul>
-			<div class="tab-content clearfix">
-			  <div class="tab-pane active" id="1a">
-				</div>
-				<div class="tab-pane" id="2a">
-          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
-				</div>
-        <div class="tab-pane" id="3a">
-          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
-				</div>
-          <div class="tab-pane" id="4a">
-          <h3>We use css to change the background color of the content to be equal to the tab</h3>
-				</div>
-			</div>
+        </ul> -->
+			
   </div>
 
-        <div class="table-responsive">
+        <div class="card" id="list">
+                <div class = "row" id="product">               
+            <div>
+                                    
+                            </div>
+        <!-- <div class="table-responsive">
         <table class="table">
         <thead>
                        <tr>
@@ -87,82 +80,38 @@
                     </thead>
                     <tbody>
                        <?php  
-                         echo "<tr>";
-                         $strJsonFileContents = file_get_contents("json/cart.json");
-                         // Convert to array 
-                         $array = json_decode($strJsonFileContents, true);
-                        //   var_dump($array); // print array
-                        //   var_dump($array['cart'][0]['productName']); 
+                        //  echo "<tr>";
+                        //  $strJsonFileContents = file_get_contents("json/cart.json");
+                        //  // Convert to array 
+                        //  $array = json_decode($strJsonFileContents, true);
+                        // //   var_dump($array); // print array
+                        // //   var_dump($array['cart'][0]['productName']); 
                     
-                          foreach($array['cart'] as $cart) {
-                            $productname = $cart['productName'];
-                            $price = $cart['price'];
-                            $quantity = $cart['quatity'];
-                                 echo  "<td>" .  $productname . "</td>";
-                                 echo "<td>" .  $price . "</td>";
-                                 echo  "<td>" . $quantity . "</td>" ;
-                                 echo "</ul>";
-                                 echo "</td>";
-                          ?>
+                        //   foreach($array['cart'] as $cart) {
+                        //     $productname = $cart['productName'];
+                        //     $price = $cart['price'];
+                        //     $quantity = $cart['quatity'];
+                        //          echo  "<td>" .  $productname . "</td>";
+                        //          echo "<td>" .  $price . "</td>";
+                        //          echo  "<td>" . $quantity . "</td>" ;
+                        //          echo "</ul>";
+                        //          echo "</td>";
+                        //   ?>
                            
                           </td>
                        </tr>
-                       <?php
-                              
-                         
-                      }
-               
+                     
                       ?>
                     </tbody>
 
   </table>
-</div>
+</div> -->
 
     </div>
-    <div class="row">
-        <!-- <div class="col-md-6 col-lg-4 col-xl-3">
-            <h2>HTML</h2>
-            <p>HTML is the standard markup language for describing the structure of the web pages. Our HTML tutorials will help you to understand the basics of latest HTML5 language, so that you can create your own website.</p>
-            <p><a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-            <h2>CSS</h2>
-            <p>CSS is used for describing the presentation of web pages. CSS can save a lot of time and effort. Our CSS tutorials will help you to learn the essentials of latest CSS3, so that you can control the style and layout of your website.</p>
-            <p><a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-            <h2>JavaScript</h2>
-            <p>JavaScript is the most popular and widely used client-side scripting language. Our JavaScript tutorials will provide in-depth knowledge of the JavaScript including ES6 features, so that you can create interactive websites.</p>
-            <p><a href="https://www.tutorialrepublic.com/javascript-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-            <h2>Bootstrap</h2>
-            <p>Bootstrap is a powerful front-end framework for faster and easier web development. Our Bootstrap tutorials will help you to learn all the features of latest Bootstrap 4 framework so that you can easily create responsive websites.</p>
-            <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-            <h2>PHP</h2>
-            <p>PHP is the most popular server-side scripting language for creating dynamic web pages. Our PHP tutorials will help you to learn all the features of latest PHP7 scripting language so that you can easily create dynamic websites.</p>
-            <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-            <h2>SQL</h2>
-            <p>SQL is a standard language designed for managing data in relational database management system. Our SQL tutorials will help you to learn the fundamentals of the SQL language so that you can efficiently manage your databases.</p>
-            <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-            <h2>References</h2>
-            <p>Our references section outlines all the standard HTML5 tags and CSS3 properties along with other useful references such as color names and values, character entities, web safe fonts, language codes, HTTP messages, and more.</p>
-            <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-            <h2>FAQ</h2>
-            <p>Our Frequently Asked Questions (FAQ) section is an extensive collection of FAQs that provides quick and working solution of common questions and queries related to web design and development with live demo.</p>
-            <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-        </div> -->
+    
     </div>
     <hr>
-    <footer>
+    <!-- <footer>
         <div class="row">
             <div class="col-md-6">
                 <p>Copyright &copy; 2019 Team Ideya++</p>
@@ -173,8 +122,8 @@
                 <a href="#" class="text-dark">Privacy Policy</a>
             </div>
         </div>
-    </footer>
-</div>
+    </footer> -->
+
 </body>
 <script src= "scripts.js"> </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

@@ -2,13 +2,14 @@
     $contentBodyJson = file_get_contents('php://input');
     $content = json_decode($contentBodyJson, true);
     $item_name = $content['itemName'];
+    // echo 'item name ' . $item_name;
     $strJsonFileContents = file_get_contents("json/items.json");
      // Convert to array 
      $array = json_decode($strJsonFileContents, true);
     //   var_dump($array); // print array
     //   var_dump($array['cart'][0]['productName']); 
     $itemsdetails = $array['items'];
-    echo json_encode($itemsdetails);
+    //echo json_encode($itemsdetails);
     $items = array();
     
 foreach ($array as $rkey => $itemsdetails){
@@ -16,12 +17,11 @@ foreach ($array as $rkey => $itemsdetails){
         $items[] = $itemsdetails;
     } 
 }
-
+// header('Content-Type: application/json');
 // header('Content-Type: application/json');
 // echo json_encode(['result' => $items]);
-echo json_encode(['result' => $items]);
+echo json_encode(['result' =>  $array]);
 // echo json_encode($customers);
-
 
     //   foreach($array['cart'] as $cart) {
     //     $productname = $cart['productName'];
@@ -37,4 +37,3 @@ echo json_encode(['result' => $items]);
       ?>
 
 
-?>
