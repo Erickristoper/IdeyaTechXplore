@@ -31,11 +31,14 @@ function setupButtons() {
     buttonSearch = select('#buttonSearch');
     buttonSearch.mousePressed(function() {
         console.log("Search for " + keyword);
+        document.getElementById("itemname").value = keyword;
+//        searchItem();
     });
 
     // Predict Button
     buttonPredict = select('#buttonPredict');
     buttonPredict.mousePressed(classify);
+
 }
 
 // Classify the current frame.
@@ -50,7 +53,6 @@ function gotResults(err, results) {
   }
   if (results && results[0]) {
     select('#result').html(results[0].label);
-    select('#confidence').html(results[0].confidence.toFixed(2) * 100 + '%');
     keyword = results[0].label;
     classify();
   }

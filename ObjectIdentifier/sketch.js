@@ -145,15 +145,19 @@ function gotResults(err, results) {
   }
 }
 
-const storesURL = 'http://192.168.0.132:3030/stores/';
-fetch(storesURL)
+fetch('http://192.168.0.132:3030/stores/')
     .then((resp) => resp.json())
     .then(function(data) {
         console.log(data);
     })
 
-const allStoresCartURL = 'http://192.168.0.132:3030/allStoresCart/';
-fetch(allStoresCartURL)
+fetch('http://192.168.0.132:3030/allStoresCart/')
+    .then((resp) => resp.json())
+    .then(function(data) {
+        console.log(data);
+    })
+
+fetch('http://192.168.0.132:3030/shoppingList/')
     .then((resp) => resp.json())
     .then(function(data) {
         console.log(data);
