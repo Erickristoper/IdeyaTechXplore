@@ -57,7 +57,7 @@ function setupButtons() {
 
   buttonA = select('#cerealButton');
   buttonA.mousePressed(function() {
-    classifier.addImage('cereal');
+    classifier.addImage('Cheerios');
     select('#amountOfCerealImages').html(cerealImages++);
   });
 
@@ -69,7 +69,7 @@ function setupButtons() {
 
   buttonC = select('#shampooButton');
   buttonC.mousePressed(function() {
-    classifier.addImage('shampoo');
+    classifier.addImage('HeadandShoulders');
     select('#amountOfShampooImages').html(shampooImages++);
   });
   
@@ -81,13 +81,13 @@ function setupButtons() {
   
   buttonE = select('#airfreshnerButton');
   buttonE.mousePressed(function() {
-    classifier.addImage('air freshner');
+    classifier.addImage('AmbiPur');
     select('#amountOfAirFreshnerImages').html(airfreshnerImages++);
   });
   
   buttonF = select('#detergentButton');
   buttonF.mousePressed(function() {
-    classifier.addImage('detergent');
+    classifier.addImage('tide');
     select('#amountOfDetergentImages').html(airfreshnerImages++);
   });
   
