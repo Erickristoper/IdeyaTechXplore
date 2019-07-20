@@ -1,0 +1,101 @@
+body {
+    padding : 10px ;
+    
+  }
+  
+  #exTab1 .tab-content {
+    /* color : white; */
+    /* background-color: #428bca; */
+    padding : 5px 15px;
+   
+  }
+
+
+  #exTab2 .tab-content {
+    /* color : white; */
+    /* background-color: #428bca; */
+    padding : 5px 15px;
+   
+  }
+
+
+
+  #exTab1 .h5 {
+    /* color : white; */
+    /* background-color: #428bca; */
+    /* margin-left:15px; */
+   
+  }
+
+
+
+  #exTab2 h3 {
+    color : white;
+    /* background-color: #428bca; */
+    padding : 5px 15px;
+
+  }
+  
+  /* remove border radius for the tab */
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  /* change border radius for the tab , apply corners on top*/
+  
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+  }
+  
+  #exTab3 .tab-content {
+    color : white;
+    /* background-color: #428bca; */
+    padding : 5px 15px;
+  }
+  
+
+
+  #profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  #list {
+      margin-bottom: 5px;
+  }
+  
+  #list h5 {
+    margin-left:15px;
+  }
+
+
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }

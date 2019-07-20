@@ -5,7 +5,12 @@
   "coordinates":"5km away",
   "logo":"DDDDDDDDDDDDDDDDDD", 
   "contactNumbers":"000-001",
-  "ratings":"5"},
+  "ratings":"5",
+  "products": [
+    {"name" : "Cheerios", "price":"20.00"},
+    {"name" : "Tide", "price":"400.00"}
+  ]
+  },
   
   {"name":"S&R Membership", 
   "address":"32nd Street, 5th Ave, Taguig, 1634",
@@ -33,6 +38,5 @@
   "coordinates":"10km away",
   "logo":"ytyerui", 
   "contactNumbers":"000-001",
-  "ratings":"5"},
-]
-}
+  "ratings":"5"}
+ ]}

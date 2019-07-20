@@ -5,20 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Team Ideya++</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-<?php
-    $strJsonFileContents = file_get_contents("json/cart.json");
-    // Convert to array 
-    $array = json_decode($strJsonFileContents, true);
-    var_dump($array); // print array
-    var_dump($array['cart'][0]['productName']);
-?>
- 
+<body> 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
     <div class="container-fluid">
         <a href="#" class="navbar-brand mr-3">Shopping List</a>
@@ -43,7 +36,88 @@
     <div class="jumbotron">
         <h1>Shopping Cart</h1>
         <p class="lead">Enhance your shopping experience today!.</p>
-        <p><a href="" target="_blank" class="btn btn-success btn-lg">Get started today</a></p>
+        <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Search</span>
+        </div>
+        <input class="form-control" id="itemname" aria-label="With textarea">
+        <input type="button" id="submit">
+        </div>
+    
+
+        <!-- <div class="container"><h1>Items </h1></div> -->
+        <div id="exTab1" class="container">	
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#1a">ALL STORES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#2a">ON SALE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#3a">CATEGORIES</a>
+            </li>
+        </ul>
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1a">
+				</div>
+				<div class="tab-pane" id="2a">
+          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+				</div>
+        <div class="tab-pane" id="3a">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+				</div>
+          <div class="tab-pane" id="4a">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+				</div>
+			</div>
+  </div>
+
+        <div class="table-responsive">
+        <table class="table">
+        <thead>
+                       <tr>
+                       <tr class="spacer"></tr>
+                         <th>Product Name</th>
+                         <th>Price</th>
+                         <th>Quantity</th>
+                         <th>&nbsp;</th>
+                       </tr> 
+                    </thead>
+                    <tbody>
+                       <?php  
+                         echo "<tr>";
+                         $strJsonFileContents = file_get_contents("json/cart.json");
+                         // Convert to array 
+                         $array = json_decode($strJsonFileContents, true);
+                        //   var_dump($array); // print array
+                        //   var_dump($array['cart'][0]['productName']); 
+                    
+                          foreach($array['cart'] as $cart) {
+                            $productname = $cart['productName'];
+                            $price = $cart['price'];
+                            $quantity = $cart['quatity'];
+                                 echo  "<td>" .  $productname . "</td>";
+                                 echo "<td>" .  $price . "</td>";
+                                 echo  "<td>" . $quantity . "</td>" ;
+                                 echo "</ul>";
+                                 echo "</td>";
+                          ?>
+                           
+                          </td>
+                       </tr>
+                       <?php
+                              
+                         
+                      }
+               
+                      ?>
+                    </tbody>
+
+  </table>
+</div>
+
     </div>
     <div class="row">
         <!-- <div class="col-md-6 col-lg-4 col-xl-3">
@@ -102,5 +176,7 @@
     </footer>
 </div>
 </body>
-<script src= "scripts.js" > </script>
+<script src= "scripts.js"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </html>                            
