@@ -33,6 +33,7 @@
     </div>    
 </nav>
 <div class="container">
+<a href="home.php">Home</a>    
     <div class="jumbotron">
         <h1>Shopping Cart</h1>
         <p class="lead">Enhance your shopping experience today!.</p>
@@ -106,10 +107,11 @@
 
   </table>
 </div> -->
-
+                
     </div>
     
     </div>
+    <a href="shopping_list.php">Shopping list</a>     
     <hr>
     <!-- <footer>
         <div class="row">

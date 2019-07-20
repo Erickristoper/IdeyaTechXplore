@@ -89,10 +89,11 @@
             var row = $('#product');
             var size = cf.standard;
             var path = cf.image;
-            var itemdiv =  '<div id="image"><img width="100" height="80" id ="itemimage"></div><div style ="display:inline-block"><h5 id="item"></h5><h5 id="size"></h5></div><div style ="display:inline-block"><h5>Old Price:</h5><h5 id ="oldprice">20.00</h5></div><div id="image"> <button class="btn success" id ="save">Add</button>';
+            var itemdiv =  '<div id="image"><img width="100" height="80" id ="itemimage"></div><div style ="display:inline-block"><h5 id="item"></h5><h5 id="size"></h5></div><div style ="display:inline-block"><h5>Old Price:</h5><h5 id ="oldprice"></h5></div><div id="image">';
             // <input type ="button" width="80" height="80" id ="addimage">+<button>';
                 
             row.append(itemdiv);
+            $('#oldprice').text(price);
             $('#item').text(name);
             $('#size').text('Size: '+ size);
             $("#itemimage").attr("src",path);
