@@ -32,7 +32,7 @@ function setup() {
   featureExtractor = ml5.featureExtractor('MobileNet', modelReady);
 
   // Create a new classifier using those features and give the video we want to use
-  const options = { numLabels: 3 };
+  const options = { numLabels: 7 };
   classifier = featureExtractor.classification(video, options);
   // Set up the UI buttons
   setupButtons();
