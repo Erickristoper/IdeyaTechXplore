@@ -1,7 +1,7 @@
 {
 "items":[
   {"name":"Tide", 
-  "description":"BBBBBBBBBB",
+  "description":"Tide's wide variety of laundry detergents make it easy to find the ideal detergent for your needs.",
   "image":"https://i5.walmartimages.com/asr/f998c582-4acf-4245-b910-cf51809615f5_1.aeaee6f600a9a66600a38218a76d5cf6.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
   "price":"250", 
   "promo":"TECHXPLORE",
@@ -9,7 +9,7 @@
   "standard":"5",
   "category":"detergent"},
   
-  {"name":"Ariel", 
+  {"name":"Downy",
   "description":"BBBBBBBBBB",
   "image":"CCCCCCCCCCCCCCCC",
   "price":"DDDDDDDDDDDDDDDDDD", 
@@ -62,14 +62,5 @@
   "discount":"5",
   "standard":"5",
   "category":"air freshner"},
-  
-  {"name":"Ambi Pur", 
-  "description":"BBBBBBBBBB",
-  "image":"https://images-na.ssl-images-amazon.com/images/I/71J4LLKFW8L._SX466_.jpg",
-  "price":"DDDDDDDDDDDDDDDDDD", 
-  "promo":"EEEEEEEEEEEEEEEEEEE",
-  "discount":"5",
-  "standard":"5",
-  "category":"air freshner"}
 ]
 }
