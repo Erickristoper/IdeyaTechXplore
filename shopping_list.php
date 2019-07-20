@@ -33,8 +33,6 @@
         </div>
     </div>    
 </nav>
-
-
     <div class="jumbotron">
     <div class="container">
 <!-- <div class="card" id ="profile">
@@ -151,14 +149,7 @@
                                     $count = 0;
                                 }
 
-                                
                               } 
-
-
-
-
-
-                              
 
                           }    
                                 // <!-- Trigger the modal with a button -->
@@ -210,7 +201,8 @@
                               echo  "</div>";
                           echo "<h5 style='color:red;text-align:center'>" .  "<h4 id = 'totalstore'>" . $count . "</h4>" .  'Stores Found!' . "</h5>";
 
-                          ?> 
+                          ?>
+
                 </div> 
               
                 <div class="tab-pane" id="2a" data-toggle="tab">

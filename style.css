@@ -70,11 +70,12 @@ body {
   
   #list {
       margin-bottom: 5px;
+      font-size: 9px;
   }
-  
+/*   
   #list h5 {
     margin-left:15px;
-  }
+  } */
 
 
   button {

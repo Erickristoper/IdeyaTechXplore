@@ -33,58 +33,9 @@
         </div>
     </div>    
 </nav>
-
     <div class="jumbotron">
     <div class="container">
-<div class="card" id ="profile">
-  <img src="images.png" alt="John" style="width:100%">
-  <h1>Jamie Santos</h1>
-  <p class="title">Shopper</p>
-</div>
-        <div id="exTab1" class="container">	
-
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="#1a">MY SHOPPING LIST</a>
-            </li>
-            <li class="nav-item">
-                <!-- <a class="nav-link" href="#2a">ORDERS</a> -->
-              
-            </li>
-           
-        </ul>
-			<div class="tab-content clearfix">
-			  <div class="tab-pane active" id="1a">
-                       <?php  
-                         $strJsonFileContents = file_get_contents("json/cart.json");
-                         $array = json_decode($strJsonFileContents, true);
-                    
-                          foreach($array['cart'] as $cart) {
-                            echo "<div class='card' id='list'>";
-                            $productname = $cart['productName'];
-                            $price = $cart['price'];
-                            $quantity = $cart['quatity'];
-                           echo "<div class = 'row' style='margin-left:10px'>";
-                           echo "<div id='list'>";
-                           echo "<p>" . 'Shopping List 1' . "</p>";                         
-                           echo "<p>" . 'SM North Hypermarket'. "</p>";
-                           echo "<p>" . '4 Items on list'. "</h5>";
-                           echo "<p>" . 'Last Transaction: July 20, 2019'. "</p>";
-                           echo "</div>";
-                           echo "<div>";
-                                 echo  "<p>" . 'Php ' . '3,205.OO' . "</p>";
-                                 echo  "<small>" . 'Old Price: 3,225.00' . "</small>";
-                              
-                           echo " </div>";
-
-                                 echo " </div>";
-                                 echo " </div>";
-                          }    
-                          ?>
-                </div> 
-                
-                <a href="shopping_list.php">Shopping list</a>     
-                <div class="tab-pane" id="2a" data-toggle="tab">
+<div class="tab-pane" id="2a" data-toggle="tab">
                 
                 <?php  
                              $strJsonFileContents = file_get_contents("json/cart.json");
@@ -95,41 +46,43 @@
                                 $productname = $cart['productName'];
                                 $price = $cart['price'];
                                 $quantity = $cart['quatity'];
-                            echo "<div id = 'legend' style = 'display:inline'>";
-                              echo "<img src='assets/yellow.png' width='20' height='20'>" . 'Fullfilled';
+                                echo "<div id = 'legend' style = 'display:inline'>";
+                                 echo "<img src='assets/yellow.png' width='20' height='20'>" . 'Fullfilled';
                               echo "<img src='assets/green.jpg' width='20' height='20'>" . 'On Store';
                               echo "<img src='assets/blue.png' width='20' height='20'>" . 'Cancelled';
                             echo "</div>";
                                echo "<div class = 'row'>";
-                               echo "<div id='list'>";
-                               echo "<small>" . '00005' . "</small>";                         
-                               echo "<small>" . 'july 20,2019'. "</small>";
-                               echo "<small>" . 'Metro Supermarket'. "</small>";
-                               echo "<small>" . 'Receipt No: 20021022'. "</small>";
+                               echo "<div id='list' style='margin-left:20px;'>";
+                               echo "<p>" . '00005' . "</p>";                         
+                               echo "<p>" . 'july 20,2019'. "</p>";
+                               echo "<p>" . 'Metro Supermarket'. "</p>";
+                               echo "<p>" . 'Receipt No: 20021022'. "</p>";
                                echo "</div>";
     
-                               echo "<div>";
-                                     echo  "<h6>" . 'Php ' . '3,205.OO' . "</h6>";
+                               echo "<div style='margin-left:20px;'>";
+                                     echo  "<p>" . 'Php ' . '3,205.OO' . "</p>";
                                      echo  "<small>" . 'You saved P202.OO from your transaction' . "</small>";
                                   
-                               echo " </div>";
+                               echo "</div>";
     
                                      echo " </div>";
                                      echo " </div>";
-                                
-                            
                               }    
                               ?>        
-
+    
              </div>
+
+                </div> 
+                            
                 </div>
-         <!-- <div class ="tab-content clearfix"> -->
 
 		</div>
+       
          
 			</div>
   </div>
 
+    
     </div>
     <div class="row">
       
