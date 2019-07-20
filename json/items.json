@@ -61,6 +61,15 @@
   "promo":"EEEEEEEEEEEEEEEEEEE",
   "discount":"5",
   "standard":"5",
+  "category":"air freshner"},
+  
+  {"name":"Ambi Pur", 
+  "description":"BBBBBBBBBB",
+  "image":"https://images-na.ssl-images-amazon.com/images/I/71J4LLKFW8L._SX466_.jpg",
+  "price":"DDDDDDDDDDDDDDDDDD", 
+  "promo":"EEEEEEEEEEEEEEEEEEE",
+  "discount":"5",
+  "standard":"5",
   "category":"air freshner"}
 ]
 }
