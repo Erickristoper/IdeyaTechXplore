@@ -1,0 +1,43 @@
+{
+"items":[
+  {"name":"AAAAAAA", 
+  "description":"BBBBBBBBBB",
+  "image":"CCCCCCCCCCCCCCCC",
+  "price":"DDDDDDDDDDDDDDDDDD", 
+  "promo":"EEEEEEEEEEEEEEEEEEE",
+  "discount":"5",
+  "standard":"5"},
+  
+  {"name":"AAAAAAA", 
+  "description":"BBBBBBBBBB",
+  "image":"CCCCCCCCCCCCCCCC",
+  "price":"DDDDDDDDDDDDDDDDDD", 
+  "promo":"EEEEEEEEEEEEEEEEEEE",
+  "discount":"5",
+  "standard":"5"},
+  
+  {"name":"AAAAAAA", 
+  "description":"BBBBBBBBBB",
+  "image":"CCCCCCCCCCCCCCCC",
+  "price":"DDDDDDDDDDDDDDDDDD", 
+  "promo":"EEEEEEEEEEEEEEEEEEE",
+  "discount":"5",
+  "standard":"5"},
+  
+  {"name":"AAAAAAA", 
+  "description":"BBBBBBBBBB",
+  "image":"CCCCCCCCCCCCCCCC",
+  "price":"DDDDDDDDDDDDDDDDDD", 
+  "promo":"EEEEEEEEEEEEEEEEEEE",
+  "discount":"5",
+  "standard":"5"},
+  
+  {"name":"AAAAAAA", 
+  "description":"BBBBBBBBBB",
+  "image":"CCCCCCCCCCCCCCCC",
+  "price":"DDDDDDDDDDDDDDDDDD", 
+  "promo":"EEEEEEEEEEEEEEEEEEE",
+  "discount":"5",
+  "standard":"5"}
+]
+}

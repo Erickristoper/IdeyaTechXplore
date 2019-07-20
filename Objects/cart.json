@@ -1,0 +1,23 @@
+{
+"cart":[
+  {"productName":"Nido", 
+  "price":"100",
+  "quatity":"3"},
+  
+  {"productName":"Nido", 
+  "price":"100",
+  "quatity":"3"},
+  
+  {"productName":"Nido", 
+  "price":"100",
+  "quatity":"3"},
+  
+  {"productName":"Nido", 
+  "price":"100",
+  "quatity":"3"},
+  
+  {"productName":"Nido", 
+  "price":"100",
+  "quatity":"3"},
+]
+}

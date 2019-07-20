@@ -1,0 +1,38 @@
+{
+"stores":[
+  {"name":"AAAAAAA", 
+  "address":"BBBBBBBBBB",
+  "coordinates":"CCCCCCCCCCCCCCCC",
+  "logo":"DDDDDDDDDDDDDDDDDD", 
+  "contactNumbers":"EEEEEEEEEEEEEEEEEEE",
+  "ratings":"5"},
+  
+  {"name":"GGGGGGGGGGGGGGGGG", 
+  "address":"HHHHHHHHHHHHHHHHHH",
+  "coordinates":SSSSSSSSSSSSSSSSS"",
+  "logo":"AAAAAAAAAAAAAAAAAAA", 
+  "contactNumbers":"CCCCCCCCCCCCCCC",
+  "ratings":"5"},
+  
+  {"name":"CCCCCCCCCCCC", 
+  "address":"wewrerre",
+  "coordinates":"ererewfgebsr",
+  "logo":"gertrhh", 
+  "contactNumbers":"gegrhhe",
+  "ratings":"5"},
+  
+  {"name":"DDDDDDDDDDDD", 
+  "address":"trteytuey",
+  "coordinates":"ytreytuy",
+  "logo":"tytruy", 
+  "contactNumbers":"yteryuitu",
+  "ratings":"5"},
+  
+  {"name":"EEEEEEEEEEEEEEEEE", 
+  "address":"fgrtyeui",
+  "coordinates":"ytwyeruye",
+  "logo":"ytyerui", 
+  "contactNumbers":"ytwyuei",
+  "ratings":"5"},
+]
+}
