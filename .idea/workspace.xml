@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7b217f9-0ff5-4c4a-90ed-966129cee016" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ObjectIdentifier/openCamera.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectIdentifier/openCamera.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectIdentifier/model (1).json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectIdentifier/model.weights (1).bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectIdentifier/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectIdentifier/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectIdentifier/searchImage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectIdentifier/searchImage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectIdentifier/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectIdentifier/sketch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/items.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,8 +82,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/json/items.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+                <state relative-caret-position="506">
+                  <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -175,6 +168,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -208,11 +202,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1932886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09511229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -285,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json/items.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="506">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
         </state>
       </provider>
     </entry>
