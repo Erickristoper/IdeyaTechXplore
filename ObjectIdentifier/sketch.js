@@ -13,9 +13,13 @@ let featureExtractor;
 let classifier;
 let video;
 let loss;
-let dogImages = 0;
-let catImages = 0;
-let badgerImages = 0;
+let cerealImages = 0;
+let alchoholImages = 0;
+let shampooImages = 0;
+let milkImages = 0;
+let airfreshnerImages = 0;
+let detergentImages = 0;
+let fabricSoftenerImages = 0;
 
 function setup() {
   noCanvas();
@@ -54,25 +58,48 @@ function setupButtons() {
   buttonA = select('#cerealButton');
   buttonA.mousePressed(function() {
     classifier.addImage('cereal');
-    select('#amountOfCerealImages').html(catImages++);
+    select('#amountOfCerealImages').html(cerealImages++);
   });
 
-  // When the Dog button is pressed, add the current frame
-  // from the video with a label of "dog" to the classifier
-  buttonB = select('#dogButton');
+  buttonB = select('#alchoholButton');
   buttonB.mousePressed(function() {
-    classifier.addImage('dog');
-    select('#amountOfDogImages').html(dogImages++);
+    classifier.addImage('alchohol');
+    select('#amountOfAlcoholImages').html(alchoholImages++);
   });
 
-  // When the Dog button is pressed, add the current frame
-  // from the video with a label of "dog" to the classifier
-  buttonC = select('#badgerButton');
+  buttonC = select('#shampooButton');
   buttonC.mousePressed(function() {
-    classifier.addImage('badger');
-    select('#amountOfBadgerImages').html(badgerImages++);
+    classifier.addImage('shampoo');
+    select(amountOfShampooImages).html(shampooImages++);
   });
-
+  
+  buttonD = select('#milkButton');
+  buttonD.mousePressed(function() {
+    classifier.addImage('milk');
+    select(amountOfMilkImages).html(milkImages++);
+  });
+  
+  buttonE = select('#airfreshnerButton');
+  buttonE.mousePressed(function() {
+    classifier.addImage('air freshner');
+    select(amountOfAirFreshnerImages).html(airfreshnerImages++);
+  });
+  
+  buttonF = select('#detergentButton');
+  buttonF.mousePressed(function() {
+    classifier.addImage('detergent');
+    select(amountOfDetergentImages).html(airfreshnerImages++);
+  });
+  
+  buttonG = select('#fabricSoftenerButton');
+  buttonG.mousePressed(function() {
+    classifier.addImage('fabric softener');
+    select(amountOfSoftenerImages).html(fabricSoftenerImages++);
+  });
+  
+  
+  
+  
   // Train Button
   train = select('#train');
   train.mousePressed(function() {
