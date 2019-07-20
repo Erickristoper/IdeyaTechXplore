@@ -1,0 +1,43 @@
+{
+"allCarts":[
+  {"nameOfStore": "Marketplace by Rustans",
+    "numberOfItems": "2 out 3",
+    "products": [
+      {
+        "name": "Tide",
+        "price": "300"
+      },
+      {
+        "name": "Downy",
+        "price": "250"
+      }
+    ]
+  },
+  {"nameOfStore": "S&R Membership",
+    "numberOfItems": "2 out 3",
+    "products": [
+      {
+        "name": "Tide",
+        "price": "320"
+      },
+      {
+        "name": "Downy",
+        "price": "180"
+      }
+    ]
+  },
+  {"nameOfStore": "SM HyperMarket",
+    "numberOfItems": "2 out 3",
+    "products": [
+      {
+        "name": "Tide",
+        "price": "320"
+      },
+      {
+        "name": "Cheerios",
+        "price": "450"
+      }
+    ]
+  }
+]
+}

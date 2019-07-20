@@ -1,0 +1,15 @@
+{
+"shoppingList":[
+  {"productName":"Tide",
+  "price":"200",
+  "quatity":"1"},
+
+  {"productName":"Downy",
+  "price":"130",
+  "quatity":"1"},
+
+  {"productName":"Cheerios",
+  "price":"400",
+  "quatity":"1"}
+]
+}

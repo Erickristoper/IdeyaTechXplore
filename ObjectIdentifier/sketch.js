@@ -96,8 +96,8 @@ function setupButtons() {
     classifier.addImage('fabric softener');
     select('#amountOfSoftenerImages').html(fabricSoftenerImages++);
   });
-  
-  
+
+
   
   
   // Train Button
@@ -144,3 +144,17 @@ function gotResults(err, results) {
     classify();
   }
 }
+
+const storesURL = 'http://192.168.0.132:3030/stores/';
+fetch(storesURL)
+    .then((resp) => resp.json())
+    .then(function(data) {
+        console.log(data);
+    })
+
+const allStoresCartURL = 'http://192.168.0.132:3030/allStoresCart/';
+fetch(allStoresCartURL)
+    .then((resp) => resp.json())
+    .then(function(data) {
+        console.log(data);
+    })
