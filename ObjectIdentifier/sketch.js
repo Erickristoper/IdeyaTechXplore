@@ -70,31 +70,31 @@ function setupButtons() {
   buttonC = select('#shampooButton');
   buttonC.mousePressed(function() {
     classifier.addImage('shampoo');
-    select(amountOfShampooImages).html(shampooImages++);
+    select('#amountOfShampooImages').html(shampooImages++);
   });
   
   buttonD = select('#milkButton');
   buttonD.mousePressed(function() {
     classifier.addImage('milk');
-    select(amountOfMilkImages).html(milkImages++);
+    select('#amountOfMilkImages').html(milkImages++);
   });
   
   buttonE = select('#airfreshnerButton');
   buttonE.mousePressed(function() {
     classifier.addImage('air freshner');
-    select(amountOfAirFreshnerImages).html(airfreshnerImages++);
+    select('#amountOfAirFreshnerImages').html(airfreshnerImages++);
   });
   
   buttonF = select('#detergentButton');
   buttonF.mousePressed(function() {
     classifier.addImage('detergent');
-    select(amountOfDetergentImages).html(airfreshnerImages++);
+    select('#amountOfDetergentImages').html(airfreshnerImages++);
   });
   
   buttonG = select('#fabricSoftenerButton');
   buttonG.mousePressed(function() {
     classifier.addImage('fabric softener');
-    select(amountOfSoftenerImages).html(fabricSoftenerImages++);
+    select('#amountOfSoftenerImages').html(fabricSoftenerImages++);
   });
   
   

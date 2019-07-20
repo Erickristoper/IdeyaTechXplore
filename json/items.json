@@ -18,7 +18,7 @@
   "standard":"5",
   "category":"fabric softener"},
   
-  {"name":"Cherios", 
+  {"name":"Cheerios", 
   "description":"BBBBBBBBBB",
   "image":"https://target.scene7.com/is/image/Target/GUEST_2dc4d7cc-02b4-4e0e-8279-fd1d65f367b3?wid=488&hei=488&fmt=pjpeg",
   "price":"480", 
@@ -27,10 +27,10 @@
   "standard":"5",
   "category":"cereal"},
   
-  {"name":"AAAAAAA", 
+  {"name":"Biogenic Alchohol", 
   "description":"BBBBBBBBBB",
-  "image":"CCCCCCCCCCCCCCCC",
-  "price":"DDDDDDDDDDDDDDDDDD", 
+  "image":"https://www.cosmetiqueasia.com/uploads/brandImages/9162015151153.jpg",
+  "price":"85", 
   "promo":"EEEEEEEEEEEEEEEEEEE",
   "discount":"5",
   "standard":"5",
@@ -43,6 +43,24 @@
   "promo":"EEEEEEEEEEEEEEEEEEE",
   "discount":"5",
   "standard":"5",
-  "category":"milk"}
+  "category":"milk"},
+  
+  {"name":"Head and Shoulders", 
+  "description":"BBBBBBBBBB",
+  "image":"https://res.cloudinary.com/pxty/image/upload/c_scale,f_auto,q_60/v1/joltc2/~/media/growing-families-version1/gf-us/product/main-images/head-shoulders-dry-scalp-care-2-in-1-anti-dandruff-shampoo-conditioner-480x480.jpg?la=en-us&v=1-201811281014",
+  "price":"DDDDDDDDDDDDDDDDDD", 
+  "promo":"EEEEEEEEEEEEEEEEEEE",
+  "discount":"5",
+  "standard":"5",
+  "category":"shampoo"},
+  
+  {"name":"Ambi Pur", 
+  "description":"BBBBBBBBBB",
+  "image":"https://images-na.ssl-images-amazon.com/images/I/71J4LLKFW8L._SX466_.jpg",
+  "price":"DDDDDDDDDDDDDDDDDD", 
+  "promo":"EEEEEEEEEEEEEEEEEEE",
+  "discount":"5",
+  "standard":"5",
+  "category":"air freshner"}
 ]
 }
