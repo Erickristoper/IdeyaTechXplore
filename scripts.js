@@ -89,14 +89,15 @@
             var row = $('#product');
             var size = cf.standard;
             var path = cf.image;
-            var itemdiv =  '<div id="image"><img width="100" height="80" id ="itemimage"></div><div style ="display:inline-block"><h5 id="item"></h5><h5 id="size"></h5></div><div style ="display:inline-block"><h5>Old Price:</h5><h5 id ="oldprice"></h5></div><div id="image">';
+            var itemdiv =  '<div id="image"><img width="100" height="80" id ="itemimage"></div><div style ="display:inline-block"><h5 id="item"></h5></div><div style ="display:inline-flex"><h5 id ="oldlabel"></h5><h5 id ="oldprice"></h5></div><div id="image">';
             // <input type ="button" width="80" height="80" id ="addimage">+<button>';
                 
             row.append(itemdiv);
-            $('#oldprice').text(price);
+            $('#oldprice').text('PHP ' + price + '.00');
             $('#item').text(name);
-            $('#size').text('Size: '+ size);
+            // $('#size').text('Size: '+ size);
             $("#itemimage").attr("src",path);
+            $('#oldprice').css('margin-left','15px');
             // $("#addimage").attr("src",'assets/add.png');
             $("#addimage").innerHTML = '+';
             $('#product').css('margin-left:10px');

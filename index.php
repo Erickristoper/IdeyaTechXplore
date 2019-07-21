@@ -45,10 +45,8 @@
         <input type="button" id="submit" value="Go">
         </div>
     
-
         <!-- <div class="container"><h1>Items </h1></div> -->
         <div id="exTab1" class="container">	
-
         <!-- <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link active" href="#1a">ALL STORES</a>
@@ -67,46 +65,7 @@
                 <div class = "row" id="product">               
             <div>
                                     
-                            </div>
-        <!-- <div class="table-responsive">
-        <table class="table">
-        <thead>
-                       <tr>
-                       <tr class="spacer"></tr>
-                         <th>Product Name</th>
-                         <th>Price</th>
-                         <th>Quantity</th>
-                         <th>&nbsp;</th>
-                       </tr> 
-                    </thead>
-                    <tbody>
-                       <?php  
-                        //  echo "<tr>";
-                        //  $strJsonFileContents = file_get_contents("json/cart.json");
-                        //  // Convert to array 
-                        //  $array = json_decode($strJsonFileContents, true);
-                        // //   var_dump($array); // print array
-                        // //   var_dump($array['cart'][0]['productName']); 
-                    
-                        //   foreach($array['cart'] as $cart) {
-                        //     $productname = $cart['productName'];
-                        //     $price = $cart['price'];
-                        //     $quantity = $cart['quatity'];
-                        //          echo  "<td>" .  $productname . "</td>";
-                        //          echo "<td>" .  $price . "</td>";
-                        //          echo  "<td>" . $quantity . "</td>" ;
-                        //          echo "</ul>";
-                        //          echo "</td>";
-                        //   ?>
-                           
-                          </td>
-                       </tr>
-                     
-                      ?>
-                    </tbody>
-
-  </table>
-</div> -->
+        </div>
                 
     </div>
     

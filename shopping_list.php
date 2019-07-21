@@ -78,7 +78,7 @@
 
                                         echo "<div style ='display:inline-block'>";
                                                 echo  "<small>" . 'Old Price ' . "</small>";
-                                                echo  "<h5>" . 'Php ' .  $oldprice. "</h5>";
+                                                echo  "<h5>" . 'Php ' .  $oldprice . "</h5>";
       
                                         echo "</div>";
                                   
@@ -115,7 +115,9 @@
                                 {
                                     $count;
                                     echo "<div class='card' id='list'>";
-                                    echo "<h3 style ='color:red;'>" . $storeslist['name'] . "</h3>" . 'got' . ' ' .  $count_item . ' items ' . ' from your list';
+                                    echo "<h3 style ='color:red;'>" . $storeslist['name'] . "</h3>";
+                                    echo "<p>".  $storeslist['address'] . "</p>";
+                                    echo "<small>" . 'Revealed' . ' ' .  $count_item . ' items ' . ' from your list' . "</small>";
                                     echo "<button data-toggle='modal' data-target='#myModal'>" .'Check Items' . "</button>";
                                     // <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
                                         foreach($storesArray['stores'][0]['products'] as $storesnames){
@@ -168,18 +170,20 @@
                                     // <?php 
                                     $stores = file_get_contents("json/stores.json");
                                      $storesArray = json_decode($stores, true);
-                                        foreach($storesArray['stores'] as $storesnames){
-                                            foreach($storesnames['products'] as $prods){
-                                             if($prods['name']== $productname){
-                                                 
+                                     foreach($storesArray['stores'][0]['products'] as $storesnames){
+                                         echo json_encode($storesnames);
+                                       // foreach($storesArray['stores'] as $storesnames){
+                                           // foreach($storesnames['products'] as $prods){
+                                             if($storesnames['name']== $productname){
                                                 // foreach($storesArray['stores'][0]['products'] as $storesnames){
                                         
                                                    // if($storesnam['name'] == $productname){
                                                         
                                                         // $count_item++;
-                                                    $itemname = $prods['name'];
+                                                    
+                                                    $itemname = $storesnames['name'];
                                                     echo  $itemname . "<br>";
-                                                   $itemprice = $prods['price'];
+                                                   $itemprice = $storesnames['price'];
                                                     echo   $itemprice . "<br>";
                                                     }else {
                                                         // $count_item = 0;
@@ -187,7 +191,7 @@
                                         //  }
                                                 // $count_item++;
                                             }  
-                                            }
+                                           // }
                                         // }
                                     // 
                                        
